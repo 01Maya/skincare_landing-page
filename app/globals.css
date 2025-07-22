@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .animate-draw {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: draw 2s ease-out forwards;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+@layer components {
+  /* Consistent Button Styles */
+  .btn-primary {
+    @apply bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105 shadow-teal-200/50;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-teal-50 text-gray-800 px-8 py-4 rounded-full border border-teal-200 hover:border-teal-300 transition-all duration-300 hover:shadow-lg hover:scale-105 backdrop-blur-sm;
+  }
+
+  /* Typography */
+  .section-title {
+    @apply text-3xl md:text-4xl font-light text-gray-800 mb-6 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-gray-600 max-w-2xl mx-auto text-lg text-center;
+  }
+
+  /* Icon Containers */
+  .icon-container {
+    @apply w-12 h-12 md:w-16 md:h-16 mx-auto bg-teal-100 rounded-full flex items-center justify-center group-hover:bg-teal-200 transition-colors duration-300 group-hover:rotate-12;
+  }
+
+  .icon-container-lg {
+    @apply w-16 h-16 md:w-20 md:h-20 mx-auto bg-teal-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-teal-200 transition-colors duration-300 group-hover:rotate-12;
+  }
+
+  /* Card Components */
+  .feature-card {
+    @apply text-center space-y-4 p-4 md:p-6 rounded-2xl hover:bg-teal-50 transition-all duration-300 hover:scale-105 cursor-pointer;
+  }
+
+  .benefit-card {
+    @apply text-center space-y-4 p-6 rounded-2xl hover:bg-teal-50 transition-all duration-300 hover:scale-105 cursor-pointer;
+  }
+
+  .ingredient-card {
+    @apply bg-white p-6 md:p-8 rounded-3xl shadow-lg hover:shadow-2xl shadow-teal-200/50 transition-all duration-300 hover:scale-105 cursor-pointer;
+  }
+
+  .category-card {
+    @apply text-center space-y-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl shadow-teal-200/50 transition-all duration-300 hover:scale-105 cursor-pointer;
+  }
+
+  .collection-card {
+    @apply relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl shadow-teal-200/50 transition-all duration-500 cursor-pointer;
+  }
+
+  /* Text Styles */
+  .feature-text {
+    @apply text-xs text-gray-600 uppercase tracking-wide font-medium whitespace-pre-line group-hover:text-teal-600 transition-colors duration-300;
+  }
+
+  .ingredient-title {
+    @apply font-medium text-gray-800 uppercase tracking-wide text-sm mb-4 group-hover:text-teal-600 transition-colors duration-300;
+  }
+
+  .category-title {
+    @apply font-medium text-gray-800 text-sm uppercase tracking-wide group-hover:text-teal-600 transition-colors duration-300;
+  }
+
+  .collection-title {
+    @apply font-medium text-lg uppercase tracking-wide mb-1;
+  }
+
+  .collection-subtitle {
+    @apply text-sm opacity-90;
+  }
+
+  /* Category Icons */
+  .category-icon {
+    @apply w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full transition-colors duration-300 group-hover:rotate-12;
+  }
+
+  /* Collection Overlays */
+  .collection-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-teal-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+
+  .collection-content {
+    @apply absolute bottom-6 left-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300;
+  }
+
+  .collection-arrow {
+    @apply absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300;
+  }
+
+  /* Floating Elements */
+  .floating-element {
+    @apply absolute bg-white rounded-full p-4 shadow-lg shadow-teal-200/50 animate-bounce;
+  }
+
+  /* Shadow Styles */
+  .shadow-primary {
+    box-shadow: 0 10px 25px -3px rgba(20, 184, 166, 0.1), 0 4px 6px -2px rgba(20, 184, 166, 0.05);
+  }
+
+  .shadow-primary-lg {
+    box-shadow: 0 25px 50px -12px rgba(20, 184, 166, 0.25);
+  }
+
+  /* Newsletter Components */
+  .newsletter-input {
+    @apply flex-1 px-6 py-4 rounded-full border-0 focus:outline-none focus:ring-2 focus:ring-white/50 bg-white/90 backdrop-blur-sm placeholder:text-gray-500;
+  }
+
+  .newsletter-button {
+    @apply bg-white text-teal-600 hover:bg-teal-50 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-lg font-medium;
+  }
+
+  /* Footer Components */
+  .social-icon {
+    @apply w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-teal-600 transition-colors duration-300 cursor-pointer;
+  }
+
+  .footer-link {
+    @apply text-gray-400 hover:text-teal-400 transition-colors duration-300 text-sm;
+  }
+}
+
+/* Custom scrollbar with teal theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0fdfa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #14b8a6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f766e;
+}
+
+/* Global transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+    transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Enhanced hover effects */
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+  transition-duration: 700ms;
+}
+
+.group:hover .group-hover\:rotate-12 {
+  transform: rotate(12deg);
+  transition-duration: 300ms;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img[data-loaded="false"] {
+  opacity: 0;
+}
+
+img[data-loaded="true"] {
+  opacity: 1;
+}
