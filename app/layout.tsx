@@ -2,9 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Olea Skin Care',
+  description: 'Olea Skin Care Landing page-Clean and Minimal',
 }
 
 export default function RootLayout({
