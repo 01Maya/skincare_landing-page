@@ -75,5 +75,5 @@ or
 yarn dev
 
 ### 📸 Screenshots
-![Image](https://github.com/user-attachments/assets/f5f687c2-0918-45ce-a0c1-eb4aed3cf52d)
+![Image](https://github.com/user-attachments/assets/90aada31-f5a1-4cdf-9dcc-8d0a3874e15f)
 
