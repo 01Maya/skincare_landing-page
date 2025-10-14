@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Leaf, Droplets, Shield, Clock, Sparkles, Heart, ArrowRight, Star, Menu, X } from "lucide-react"
+import { Leaf, Droplets, Shield, Clock, Sparkles, Heart, ArrowRight, Star, Menu, X, Facebook, Twitter, Instagram } from "lucide-react"
 import { useState, useEffect } from "react"
 
 export default function Home() {
@@ -149,7 +149,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="aspect-square overflow-hidden rounded-3xl shadow-primary-lg">
                   <Image
-                    src="/images/hero-products.jpg"
+                    src="/images/luxury-collection.jpg"
                     alt="Premium skincare products with pink flowers and facial tools"
                     width={600}
                     height={600}
@@ -424,7 +424,7 @@ export default function Home() {
                 subtitle: "Daily Skincare",
               },
               {
-                image: "/images/luxury-collection.jpg",
+                image: "/images/hero-products.jpg",
                 title: "LUXURY",
                 subtitle: "Premium Care",
               },
@@ -485,10 +485,20 @@ export default function Home() {
                 Premium Australian skincare crafted with native botanicals for radiant, healthy skin.
               </p>
               <div className="flex space-x-4">
-                {[...Array(4)].map((_, i) => (
-                  <div key={i} className="social-icon">
-                    <div className="w-4 h-4 bg-current rounded-full"></div>
-                  </div>
+                {[
+                  { icon: <Instagram className="w-4 h-4" />, link: "https://instagram.com" },
+                  { icon: <Twitter className="w-4 h-4" />, link: "https://twitter.com" },
+                  { icon: <Facebook className="w-4 h-4" />, link: "https://facebook.com" },
+                ].map((item, i) => (
+                  <a
+                    key={i}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon text-gray-400 hover:text-white hover:scale-110 transition-all duration-300"
+                  >
+                    {item.icon}
+                  </a>
                 ))}
               </div>
             </div>
