@@ -4,7 +4,7 @@
 
 ---
 ## Preview
-https://olea-skincare.vercel.app
+https://olea-skincare-landing-page.vercel.app
 ## 🔍 Overview
 
 This application provides users with a clean and engaging interface to:
