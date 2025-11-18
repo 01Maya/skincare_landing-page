@@ -3,8 +3,7 @@
 **Olea** is a premium Australian skincare brand web application that showcases a beautiful range of skincare products made with native Australian botanicals. This web-based platform emphasizes natural ingredients, scientific efficacy, and an immersive, elegant user experience.
 
 ---
-## Preview
-https://olea-skincare-landing-page.vercel.app/
+
 ## 🔍 Overview
 
 This application provides users with a clean and engaging interface to:
@@ -29,6 +28,11 @@ Built with modern web technologies like **React**, **Next.js**, and **Tailwind C
 - 📨 **Newsletter Subscription** – Stay updated with the latest skincare tips and promos
 - 📌 **Fixed Navigation Bar** – Easy and intuitive navigation
 - 📞 **Footer** – Contact information and resource links
+
+---
+
+## Preview
+https://olea-skincare-landing-page.vercel.app/
 
 ---
 
