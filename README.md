@@ -32,6 +32,11 @@ Built with modern web technologies like **React**, **Next.js**, and **Tailwind C
 
 ---
 
+### 📸 Screenshots
+![Image](https://github.com/user-attachments/assets/90aada31-f5a1-4cdf-9dcc-8d0a3874e15f)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Technology     | Description                                  |
@@ -74,6 +79,4 @@ npm run dev
 or
 yarn dev
 
-### 📸 Screenshots
-![Image](https://github.com/user-attachments/assets/90aada31-f5a1-4cdf-9dcc-8d0a3874e15f)
 
