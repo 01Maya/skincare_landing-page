@@ -66,10 +66,10 @@ https://olea-skincare-landing-page.vercel.app/
 
 1. **Clone the repository:**
 
-git clone https://github.com/yourusername/olea-skincare-app.git
+   git clone https://github.com/yourusername/olea-skincare-app.git
 
 
-cd olea-skincare-app
+   cd olea-skincare-app
 
 2. **Install dependencies**
 
