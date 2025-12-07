@@ -73,9 +73,9 @@ https://olea-skincare-landing-page.vercel.app/
 
 2. **Install dependencies**
 
-npm install
-or
-yarn install
+   npm install
+   or
+   yarn install
 
 3. **Start the development server:**
 
