@@ -79,8 +79,8 @@ https://olea-skincare-landing-page.vercel.app/
 
 3. **Start the development server:**
 
-npm run dev
-or
-yarn dev
+   npm run dev
+   or
+   yarn dev
 
 
